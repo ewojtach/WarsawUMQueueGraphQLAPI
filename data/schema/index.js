@@ -20,7 +20,7 @@ const RootQueryType = new GraphQLObjectType({
       resolve: (_, { id }) => {
         // call our db to resolve id
         let retObj;
-        if (id !== null) {
+        if (id !== undefined && id !== null) {
           retObj = [
             { id: 42,
             name: 'Ursynów' }];

@@ -1,10 +1,9 @@
-import jest from 'jest';
-
-jest.dontMock('../components/DistrictOfficeContact.jsx');
 
 import React from 'react';
 import DistrictOfficeContact from '../components/DistrictOfficeContact.jsx';
 import { shallow } from 'enzyme';
+
+jest.dontMock('../components/DistrictOfficeContact.jsx');
 
 describe('DistrictOfficeContact', () => {
   describe('The DistrictOfficeContact Display', () => {
