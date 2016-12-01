@@ -9,7 +9,7 @@
 
 ### Related Projects
 
-  * [Android Sample Client](https://github.com/ewojtach/HackAndroidApp) — Android Client using graphql API with RxJava Streams.
+  * [Android Sample Client](https://github.com/ewojtach/HackAndroidApp) — Android Client using graphql API with RxJava Streams. Test Jenkins
 
 ### Learn More
 
