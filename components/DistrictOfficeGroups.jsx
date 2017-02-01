@@ -18,7 +18,7 @@ export default class DistrictOfficeGroups extends React.Component {
 
   fetchGroups() {
     const client = new Lokka({
-      transport: new Transport('http://hacknodeserver.mybluemix.net/graphql'),
+      transport: new Transport('http://localhost:6001/graphql'),
     });
 
     client.query(`
@@ -34,14 +34,16 @@ export default class DistrictOfficeGroups extends React.Component {
   let groupList;
   console.log(JSON.stringify(result));
   groupList = result.offices[0].groups;
+  console.log('groups: ' + JSON.stringify(groupList));
+
   this.setState({ groupList });
+  // this.state.gropuList = groupList;
+  console.log('groups from state: ' + this.state.groupList[0].nazwaGrupy);
 		});
   }
 
   render() {
-    const groupList = ['gr1', 'gr2', 'gr3', 'gr4'];
-
-    for (let i = 0; i < groupList.length; i++) {
+    for (let i = 0; i < this.state.groupList.length; i++) {
       this.state.groups.push(
         <Group groupName = {this.state.groupList[i].nazwaGrupy}/>
       );
