@@ -21,10 +21,6 @@ import graphqlHTTP from 'express-graphql';
 // create a new express server
 const app = express();
 
-// serve the files out of ./public as our main files
-app.use(express.static(__dirname + '/public'));
-
-
 app.use('/graphql', graphqlHTTP({
   schema: ncSchema,
   graphiql: true,

@@ -8,13 +8,13 @@ module.exports = new GraphQLObjectType({
 
   fields: {
     status: { type: GraphQLString },
-    czasObslugi: { type: GraphQLString },
-    lp: { type: GraphQLString },
-    idGrupy: { type: GraphQLString },
-    liczbaCzynnychStan: { type: GraphQLString },
-    nazwaGrupy: { type: GraphQLString },
-    literaGrupy: { type: GraphQLString },
-    liczbaKlwKolejce: { type: GraphQLString },
-    aktualnyNumer: { type: GraphQLString },
+    servingTime: { type: GraphQLString },
+    seqNo: { type: GraphQLString },
+    groupId: { type: GraphQLString },
+    servingPoints: { type: GraphQLString },
+    groupName: { type: GraphQLString },
+    groupLetter: { type: GraphQLString },
+    currentQueue: { type: GraphQLString },
+    currentNumber: { type: GraphQLString },
   },
 });
